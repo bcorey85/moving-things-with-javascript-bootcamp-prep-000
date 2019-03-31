@@ -13,11 +13,7 @@ document.addEventListener('keydown', function(e) {
   }
 })
 
-document.addEventListener('keydown', function(e) {
-  if (e.which === 39) {
-    moveDodgerRight()
-  }
-})
+
 
 function moveDodgerLeft() {
   var leftNumbers = dodger.style.left.replace('px', '')
@@ -36,3 +32,9 @@ function moveDodgerRight(){
     dodger.style.left = `${right - 1}px`
   }
 }
+
+document.addEventListener('keydown', function(e) {
+  if (e.which === 39) {
+    moveDodgerRight()
+  }
+})
